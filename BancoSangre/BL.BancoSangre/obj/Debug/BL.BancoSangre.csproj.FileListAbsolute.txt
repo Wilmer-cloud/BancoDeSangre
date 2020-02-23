@@ -1,0 +1,10 @@
+C:\Users\Wilmer\Downloads\BancodeSangre-master\BancoSangre\BL.BancoSangre\bin\Debug\BL.BancoSangre.dll
+C:\Users\Wilmer\Downloads\BancodeSangre-master\BancoSangre\BL.BancoSangre\bin\Debug\BL.BancoSangre.pdb
+C:\Users\Wilmer\Downloads\BancodeSangre-master\BancoSangre\BL.BancoSangre\obj\Debug\BL.BancoSangre.csprojResolveAssemblyReference.cache
+C:\Users\Wilmer\Downloads\BancodeSangre-master\BancoSangre\BL.BancoSangre\obj\Debug\BL.BancoSangre.dll
+C:\Users\Wilmer\Downloads\BancodeSangre-master\BancoSangre\BL.BancoSangre\obj\Debug\BL.BancoSangre.pdb
+C:\Users\Wilmer\Documents\Ejercicios\Proyectos\BancodeSangre-master\BancoSangre\BL.BancoSangre\bin\Debug\BL.BancoSangre.dll
+C:\Users\Wilmer\Documents\Ejercicios\Proyectos\BancodeSangre-master\BancoSangre\BL.BancoSangre\bin\Debug\BL.BancoSangre.pdb
+C:\Users\Wilmer\Documents\Ejercicios\Proyectos\BancodeSangre-master\BancoSangre\BL.BancoSangre\obj\Debug\BL.BancoSangre.csprojResolveAssemblyReference.cache
+C:\Users\Wilmer\Documents\Ejercicios\Proyectos\BancodeSangre-master\BancoSangre\BL.BancoSangre\obj\Debug\BL.BancoSangre.dll
+C:\Users\Wilmer\Documents\Ejercicios\Proyectos\BancodeSangre-master\BancoSangre\BL.BancoSangre\obj\Debug\BL.BancoSangre.pdb
