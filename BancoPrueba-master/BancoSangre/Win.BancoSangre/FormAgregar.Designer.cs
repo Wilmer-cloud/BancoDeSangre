@@ -279,9 +279,9 @@
             // 
             this.direccionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDonantesBindingSource, "Direccion", true));
             this.direccionTextBox.Location = new System.Drawing.Point(221, 152);
-            this.direccionTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.direccionTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.direccionTextBox.Name = "direccionTextBox";
-            this.direccionTextBox.Size = new System.Drawing.Size(131, 20);
+            this.direccionTextBox.Size = new System.Drawing.Size(193, 20);
             this.direccionTextBox.TabIndex = 3;
             this.direccionTextBox.TextChanged += new System.EventHandler(this.direccionTextBox_TextChanged);
             // 
@@ -289,9 +289,9 @@
             // 
             this.fechaTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDonantesBindingSource, "Fecha", true));
             this.fechaTextBox.Location = new System.Drawing.Point(221, 177);
-            this.fechaTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fechaTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.fechaTextBox.Name = "fechaTextBox";
-            this.fechaTextBox.Size = new System.Drawing.Size(131, 20);
+            this.fechaTextBox.Size = new System.Drawing.Size(193, 20);
             this.fechaTextBox.TabIndex = 5;
             this.fechaTextBox.TextChanged += new System.EventHandler(this.fechaTextBox_TextChanged);
             // 
@@ -299,19 +299,19 @@
             // 
             this.idTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDonantesBindingSource, "Id", true));
             this.idTextBox.Location = new System.Drawing.Point(221, 51);
-            this.idTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.idTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.ReadOnly = true;
-            this.idTextBox.Size = new System.Drawing.Size(131, 20);
+            this.idTextBox.Size = new System.Drawing.Size(193, 20);
             this.idTextBox.TabIndex = 7;
             // 
             // identidadTextBox
             // 
             this.identidadTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDonantesBindingSource, "Identidad", true));
             this.identidadTextBox.Location = new System.Drawing.Point(221, 103);
-            this.identidadTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.identidadTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.identidadTextBox.Name = "identidadTextBox";
-            this.identidadTextBox.Size = new System.Drawing.Size(131, 20);
+            this.identidadTextBox.Size = new System.Drawing.Size(193, 20);
             this.identidadTextBox.TabIndex = 9;
             this.identidadTextBox.TextChanged += new System.EventHandler(this.identidadTextBox_TextChanged);
             // 
@@ -319,18 +319,18 @@
             // 
             this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDonantesBindingSource, "Nombre", true));
             this.nombreTextBox.Location = new System.Drawing.Point(221, 77);
-            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(131, 20);
+            this.nombreTextBox.Size = new System.Drawing.Size(193, 20);
             this.nombreTextBox.TabIndex = 11;
             // 
             // telefonoTextBox
             // 
             this.telefonoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.listaDonantesBindingSource, "Telefono", true));
             this.telefonoTextBox.Location = new System.Drawing.Point(221, 129);
-            this.telefonoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.telefonoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.telefonoTextBox.Name = "telefonoTextBox";
-            this.telefonoTextBox.Size = new System.Drawing.Size(131, 20);
+            this.telefonoTextBox.Size = new System.Drawing.Size(193, 20);
             this.telefonoTextBox.TabIndex = 13;
             // 
             // FormAgregar
