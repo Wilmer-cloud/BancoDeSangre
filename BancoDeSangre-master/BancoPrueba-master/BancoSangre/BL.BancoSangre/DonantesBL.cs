@@ -122,6 +122,12 @@ namespace BL.BancoSangre
         public string Identidad { get; set; }
         public string Fecha { get; set; }
         public string Telefono { get; set; }
+        public int CategoriaId { get; set; }
+        public Categoria Categoria { get; set; }
+
+        public int TipoId { get; set; }
+        public Tipo Tipo { get; set; }
+        public byte[] foto { get; set; }      
         public string Direccion { get; set; }
     }
     public class Resultado

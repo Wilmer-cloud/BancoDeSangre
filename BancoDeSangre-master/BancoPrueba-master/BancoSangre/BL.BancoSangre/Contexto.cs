@@ -18,9 +18,13 @@ namespace BL.BancoSangre
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            Database.SetInitializer(new DatosdeInicio());
         }
 
         public DbSet<Donantes> Donantes { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Tipo> Tipos { get; set; }
 
     }
 }

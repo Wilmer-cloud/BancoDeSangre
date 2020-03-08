@@ -38,6 +38,10 @@ namespace Win.BancoSangre
             usuario = textBox1.Text;
             password = textBox2.Text;
 
+            button1.Enabled = false;
+            button1.Text = "Verificando...";
+            Application.DoEvents();
+
            var resultado= _seguridad.Autorizar(usuario, password);
 
             if (resultado)

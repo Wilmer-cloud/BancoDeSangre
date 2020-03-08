@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -74,16 +75,28 @@ namespace Win.BancoSangre
             listaDonantesBindingSource.EndEdit();
             var donante = (Donantes)listaDonantesBindingSource.Current;
 
+            if(fotoPictureBox.Image != null)
+            {
+                donante.foto = Program.imageToByteArray(fotoPictureBox.Image);
+
+            }
+            else
+            {
+                donante.foto = null;
+            }
+
             var resultado = _donantes.GuardarDonante(donante);
 
             if (resultado.Exitoso == true)
             {
                 listaDonantesBindingSource.ResetBindings(false);
                 DeshabilitarHabilitarBotones(true);
+
+                MessageBox.Show("Donante guardado exitosamente");
             }
             else
             {
-                MessageBox.Show(resultado.Mensaje);
+                MessageBox.Show("Necesita llenar todos lo campos para guardar");
             }                
 
         }
@@ -143,6 +156,36 @@ namespace Win.BancoSangre
         {
             DeshabilitarHabilitarBotones(true);
             Eliminar(0);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var donante = (Donantes)listaDonantesBindingSource.Current;
+            if(donante != null)
+            {
+                openFileDialog1.ShowDialog();
+                var archivo = openFileDialog1.FileName;
+
+                if (archivo != "")
+                {
+                    var fileInfo = new FileInfo(archivo);
+                    var fileStream = fileInfo.OpenRead();
+
+                    fotoPictureBox.Image = Image.FromStream(fileStream);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Cree un Donante antes de asignarle una imagen");
+            }
+
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            fotoPictureBox.Image = null;
         }
     }
 }
