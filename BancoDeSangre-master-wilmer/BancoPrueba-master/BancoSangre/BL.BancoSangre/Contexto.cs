@@ -21,10 +21,23 @@ namespace BL.BancoSangre
             Database.SetInitializer(new DatosdeInicio());
         }
 
+        public DbSet<Clientes> Clientes { get; set; }
         public DbSet<Donantes> Donantes { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Tipo> Tipos { get; set; }
 
+        public DbSet<Factura> Facturas { get; set; }
+
+
+
+        public class Usuario
+        {
+
+            public int Id { get; set; }
+            public string Nombre { get; set; }
+            public string password { get; set; }
+        }
     }
+    
 }

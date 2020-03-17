@@ -101,6 +101,21 @@ namespace BL.BancoSangre
                                 resultado.Mensaje = "Ingrese una fecha válida";
                                 resultado.Exitoso = false;
                             }
+                            else
+                            {
+                                if (donante.TipoId == 0)
+                                {
+                                    resultado.Mensaje = "Seleccione un tipo";
+                                    resultado.Exitoso = false;
+                                }
+
+                                if (donante.CategoriaId == 0)
+                                {
+                                    resultado.Mensaje = "Seleccione una categoria";
+                                    resultado.Exitoso = false;
+                                }
+
+                            }
                         }
                     }
                 }

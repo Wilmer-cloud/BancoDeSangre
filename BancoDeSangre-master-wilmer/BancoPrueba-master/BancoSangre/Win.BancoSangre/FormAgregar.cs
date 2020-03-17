@@ -15,6 +15,9 @@ namespace Win.BancoSangre
     public partial class FormAgregar : Form
     {
         DonantesBL _donantes;
+        CategoriasBL _categorias;
+        TiposBL _tiposBL;
+
 
         public FormAgregar()
         {
@@ -22,6 +25,13 @@ namespace Win.BancoSangre
 
             _donantes = new DonantesBL();
             listaDonantesBindingSource.DataSource = _donantes.ObtenerDonantes();
+
+            _categorias = new CategoriasBL();
+            listaCategoriasBindingSource.DataSource = _categorias.ObtenerCategorias();
+
+
+            _tiposBL = new TiposBL();
+            listaTiposBindingSource.DataSource = _tiposBL.ObtenerTipos();
 
         }
 
@@ -186,6 +196,11 @@ namespace Win.BancoSangre
         private void button2_Click(object sender, EventArgs e)
         {
             fotoPictureBox.Image = null;
+        }
+
+        private void idTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
