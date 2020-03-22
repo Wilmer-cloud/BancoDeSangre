@@ -360,8 +360,8 @@
             // clienteIdComboBox
             // 
             this.clienteIdComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.listaFacturasBindingSource, "ClienteId", true));
-            this.clienteIdComboBox.DataSource = this.listaDonantesBindingSource;
-            this.clienteIdComboBox.DisplayMember = "Tipo";
+            this.clienteIdComboBox.DataSource = this.listaClientesBindingSource;
+            this.clienteIdComboBox.DisplayMember = "Nombre";
             this.clienteIdComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.clienteIdComboBox.FormattingEnabled = true;
             this.clienteIdComboBox.Location = new System.Drawing.Point(121, 129);
